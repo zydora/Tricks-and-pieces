@@ -1,4 +1,4 @@
-function AA = Convert_toeplitz(A,x)
+function AA = Convert_toeplitz_1(A,x)
 % convert kernel A into toeplitz matrix, in convenience of production with
 % Images x(:)
 [mA,nA] = size(A); [mX,nX] = size(x);
