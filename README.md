@@ -5,11 +5,9 @@ File:
 
 MATLAB:
 
-Convert_toeplitz.m: convert a convolutional kernel A into toeplitz matrix as form of production of (AA*x(:)=target_matrix)
+1. Convert_toeplitz.m|TestConvert_toeplitz.m: convert a convolutional kernel A into toeplitz matrix as form of production of (AA*x(:)=target_matrix)
 
-TestConvert_toeplitz.m: Verify the above code.
-
-
+2. Load_3.m| load_dataset_3.m: Load dataset in matlab
 
 PYTHON:
 
