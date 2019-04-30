@@ -1,13 +1,15 @@
-% Generate class images of MNIST
 function MNIST_class
 % dataset download from 'https://cs.nyu.edu/~roweis/data.html'
-load('mnist_all.mat');
-type = 'train';
+load('C:\Users\46107\Desktop\Codes\0_Datasets\MNIST\raw\mnist_all.mat');
+type = 'test';
 savePath = 'C:\Users\46107\ALS\';
 for num = 0:1:9
-    mkdir(strcat(savePath, num2str(num)));
+    numStr = num2str(num);
+    tempNumPath = strcat(savePath, numStr);
+    mkdir(tempNumPath);
     tempNumPath = strcat(tempNumPath,'\');
-    tempFile = eval([type, numStr]);
+    tempName = [type, numStr];
+    tempFile = eval(tempName);
     [height, ~]  = size(tempFile);
     for r = 1:1:height
         tempImg = reshape(tempFile(r,:),28,28)';
