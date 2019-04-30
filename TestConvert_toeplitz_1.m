@@ -4,7 +4,7 @@
 A = randn(2,2);
 x = randn(5,5);
 X = reshape(x',[prod(size(x)),1]);
-AA = Convert_toeplitz(A,x);
+AA = Convert_toeplitz_1(A,x);
 result = AA*X;
 [mA, nA] = size(A);
 [mX,nX] = size(x);
